@@ -12,9 +12,9 @@ const user2: User = {
   age: 19,
 };
 
-UserS.deleteUser("EAKO9Rsrm4EVFejrFmw9");
+// UserS.deleteUser("EAKO9Rsrm4EVFejrFmw9");
 
-async () => {
+(async () => {
   const newUser = await UserS.createUser(user);
   UserS.deleteUser(newUser.id);
-};
+})();
