@@ -3,8 +3,8 @@ import { User } from "models/user";
 const UserS = new UserService();
 
 const user: User = {
-  username: "ray",
-  age: 21,
+  username: "Karen",
+  age: 49,
 };
 
 const user2: User = {
@@ -18,3 +18,5 @@ const user2: User = {
   const newUser = await UserS.createUser(user);
   UserS.deleteUser(newUser.id);
 })();
+
+UserS.createUser(user);
