@@ -1,5 +1,5 @@
 import * as _admin from "firebase-admin";
-
+import "dotenv/config";
 const keysEnvVar = process.env.GOOGLE_SERVICE_ACCOUNT_JSON;
 
 const keys = JSON.parse(keysEnvVar ?? "{}");
