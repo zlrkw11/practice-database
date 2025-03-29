@@ -1,6 +1,6 @@
-import Service from "data/Service";
+import UserService from "data/UserService";
 import { User } from "models/user";
-const UserService = new Service();
+const UserS = new UserService();
 
 const user: User = {
   username: "ray",
@@ -12,5 +12,9 @@ const user2: User = {
   age: 19,
 };
 
-UserService.createUser(user);
-UserService.createUser(user2);
+UserS.deleteUser("EAKO9Rsrm4EVFejrFmw9");
+
+async () => {
+  const newUser = await UserS.createUser(user);
+  UserS.deleteUser(newUser.id);
+};
