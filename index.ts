@@ -7,4 +7,10 @@ const user: User = {
   age: 21,
 };
 
+const user2: User = {
+  username: "Jeffery",
+  age: 19,
+};
+
 UserService.createUser(user);
+UserService.createUser(user2);
