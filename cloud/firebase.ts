@@ -11,11 +11,11 @@ const db = getFirestore();
 
 async function main() {
   const data = {
-    name: "benson",
-    age: 22,
+    name: "ray",
+    age: 21,
   };
 
-  await db.collection("people").doc("benson").set(data);
+  await db.collection("people").doc("ray").set(data);
   console.log("document written");
 }
 
