@@ -50,3 +50,14 @@ async function main() {
 this will add a new **collection** into the database with a new document(object) named 'benson' and
 set its data.
 
+**edit function**
+```Typescript
+return await Collections.users.doc(userID).update({ username: newName});
+```
+The curly braces stands for the data fields like ```age``` or ```name``` etc. inside a doc.
+
+### .ts file extension error
+```
+npm i -D tsx
+npx tsx index.ts
+```

@@ -19,4 +19,5 @@ const user2: User = {
   UserS.deleteUser(newUser.id);
 })();
 
-UserS.createUser(user);
+UserS.createUser(user2);
+UserS.editUsername("5qSoI7Nu6jHRMy0AdtSC", "new ray");
